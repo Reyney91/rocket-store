@@ -16,4 +16,3 @@ export interface IRocket extends ICart {
   height: { meters: number };
   mass: { kg: number };
 }
-
