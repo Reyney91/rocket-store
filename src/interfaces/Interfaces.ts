@@ -17,8 +17,3 @@ export interface IRocket extends ICart {
   mass: { kg: number };
 }
 
-export interface IPagination {
-  carts: ICart[];
-  itemsPerPage: number;
-  isLoading: boolean;
-}

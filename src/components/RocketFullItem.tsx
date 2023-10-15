@@ -30,36 +30,6 @@ const RocketFullItem: React.FC<IRocket> = (rocket: IRocket) => {
           <Heading>{rocket.rocket_name}</Heading>
         </CardHeader>
         <CardBody>
-          {/* <Flex justifyContent='space-between'>
-            <Box width='50%' justifyItems='legacy'>
-              <Text>cost per launch:</Text>
-              <Text>first flight:</Text>
-              <Text>Country:</Text>
-              <Text>description:</Text>
-              <Text>success rate: </Text>
-              <Text>height: </Text>
-              <Text>mass: </Text>
-            </Box>
-            <Box width='50%'>
-              <Badge colorScheme="green" ml="2">
-                ${rocket.cost_per_launch}
-              </Badge>
-              <Text>{rocket.first_flight}</Text>
-              <ChakraLink
-                target="_blank"
-                as={ReactRouterLink}
-                to={"https://www.google.ru/search?q=" + rocket.country}
-              >
-                <Text color="blue.600">{rocket.country}</Text>
-              </ChakraLink>
-              <Text ml={2} as="i">
-                {rocket.description}
-              </Text>
-              <Text>{rocket.success_rate_pct}</Text>
-              <Text>{rocket.height.meters} meters</Text>
-              <Text>{rocket.mass.kg} kg</Text>
-            </Box>
-          </Flex> */}
           <Box>
             <Text>
               cost per launch:
@@ -68,7 +38,6 @@ const RocketFullItem: React.FC<IRocket> = (rocket: IRocket) => {
               </Badge>
             </Text>
           </Box>
-
           <Text>first flight: {rocket.first_flight}</Text>
           <Flex>
             Country:
@@ -81,9 +50,7 @@ const RocketFullItem: React.FC<IRocket> = (rocket: IRocket) => {
               <Text color="blue.600">{rocket.country}</Text>
             </ChakraLink>
           </Flex>
-          <Text as="i">
-            description: {rocket.description}
-          </Text>
+          <Text as="i">description: {rocket.description}</Text>
           <Text>success rate: {rocket.success_rate_pct}</Text>
           <Text>height: {rocket.height.meters} meters</Text>
           <Text>mass: {rocket.mass.kg} kg</Text>
